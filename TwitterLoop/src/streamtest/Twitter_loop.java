@@ -60,9 +60,12 @@ public class Twitter_loop {
 
         connectdb(keyword);
 
-        int i = 0;
+        //int i = 0;
 
-        while(i < 1)
+        //while(i < 1)
+        long t= System.currentTimeMillis();
+        long end = t+60000;
+        while(System.currentTimeMillis() < end)
         {
             cb = new ConfigurationBuilder();
             cb.setDebugEnabled(true)

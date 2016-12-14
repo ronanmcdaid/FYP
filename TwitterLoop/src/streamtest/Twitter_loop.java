@@ -107,14 +107,14 @@ public class Twitter_loop {
 
     /**
      * initMongoDB been called in constructor so every object creation this
-     * initialize MongoDB.
+     * initialise MongoDB.
      */
     public void initMongoDB() throws MongoException {
         try {
             System.out.println("Connecting to Mongo DB..");
             Mongo mongo;
             mongo = new Mongo("127.0.0.1");
-            db = mongo.getDB("tweetDB2");
+            db = mongo.getDB("StreamTests");
         } catch (UnknownHostException ex) {
             System.out.println("MongoDB Connection Error :" + ex.getMessage());
         }
@@ -142,18 +142,28 @@ public class Twitter_loop {
 
                 for (Status tweet : tweets) {
                     BasicDBObject basicObj = new BasicDBObject();
+                    basicObj.put("created_at", tweet.getCreatedAt());
                     basicObj.put("user_name", tweet.getUser().getScreenName());
+
+                    //for popularity rankings
                     basicObj.put("retweet_count", tweet.getRetweetCount());
+                    basicObj.put("favourite_count", tweet.getFavoriteCount());
+
                     basicObj.put("tweet_followers_count", tweet.getUser().getFollowersCount());
+
+                    //originality true/false & source
+                    basicObj.put("is_retweet", tweet.isRetweet());
                     basicObj.put("source",tweet.getSource());
-                    //basicObj.put("coordinates",tweet.getGeoLocation());
+
+                    //location examples
+                    basicObj.put("coordinates",tweet.getGeoLocation());
+                    basicObj.put("user_location",tweet.getUser().getLocation());
 
 
                     UserMentionEntity[] mentioned = tweet.getUserMentionEntities();
                     basicObj.put("tweet_mentioned_count", mentioned.length);
                     basicObj.put("tweet_ID", tweet.getId());
                     basicObj.put("tweet_text", tweet.getText());
-
 
                     try {
                         items.insert(basicObj);
@@ -187,7 +197,8 @@ public class Twitter_loop {
     }
 
     public void getTweetsRecords() throws InterruptedException {
-        BasicDBObject fields = new BasicDBObject("_id", true).append("user_name", true).append("tweet_text", true);
+        BasicDBObject fields = new BasicDBObject("_id", true).append("user_name", true).append("tweet_text", true)
+                                                    .append("retweet_count", true).append("coordinates", true);
         DBCursor cursor = items.find(new BasicDBObject(), fields);
 
         while (cursor.hasNext()) {

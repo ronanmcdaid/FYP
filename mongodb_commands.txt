@@ -1,0 +1,27 @@
+Terminal:
+
+cd ..\..\Program Files\MongoDB\Server\3.2\bin
+mongod.exe
+
+Intellij:
+(remember ctrl + enter)
+
+Use StreamTests
+show collections
+
+Run TwitterLoop.java in NetBeans
+
+db.<dbname>.find()
+db.<dbname>.find().pretty()
+
+
+Sample Queries
+
+count retweets
+db.ireland.find({"retweet_count":{$gt1000}}, {user_name:1, retweet_count:1, tweet_text:1, _id:0}).pretty()
+
+count followers
+db.ireland.find({"tweet_followers_count":{$gt:1000}}, {user_name:1, tweet_followers_count:1, tweet_text:1, _id:0}).pretty()
+
+most popular tweet
+db.ireland.find().sort({retweet_count:-1}).limit(1).pretty()

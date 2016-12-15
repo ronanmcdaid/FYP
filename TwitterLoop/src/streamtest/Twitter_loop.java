@@ -198,7 +198,10 @@ public class Twitter_loop {
 
     public void getTweetsRecords() throws InterruptedException {
         BasicDBObject fields = new BasicDBObject("_id", true).append("user_name", true).append("tweet_text", true)
-                                                    .append("retweet_count", true).append("coordinates", true);
+                                                    .append("retweet_count", true).append("coordinates", true)
+                                                    .append("created_at", true).append("favourite_count", true).append("tweet_followers_count", true)
+                                                    .append("is_retweet", true).append("source", true).append("user_location", true)
+                                                    .append("tweet_mentioned_count", true).append("tweet_ID", true).append("tweet_text", true);
         DBCursor cursor = items.find(new BasicDBObject(), fields);
 
         while (cursor.hasNext()) {

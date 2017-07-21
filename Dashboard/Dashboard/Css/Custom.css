@@ -1,0 +1,213 @@
+﻿@font-face {
+    font-family: 'Avenir_LT_W01_55';
+    src: url('../CSS/Avenir_LT_W01_55.eot');
+    src: url('../CSS/Avenir_LT_W01_55.eot?#iefix')
+             format('embedded-opentype'),
+         url('../CSS/Avenir_LT_W01_55.woff') format('woff'),
+         url('../CSS/Avenir_LT_W01_55.ttf') format('truetype');
+}
+
+@font-face {
+     font-family: 'Avenir_LT_W01_65';
+    src: url('../CSS/Avenir_LT_W01_65.eot');
+    src: url('../CSS/Avenir_LT_W01_65.eot?#iefix')
+             format('embedded-opentype'),
+         url('../CSS/Avenir_LT_W01_65.woff') format('woff'),
+         url('../CSS/Avenir_LT_W01_65.ttf') format('truetype');
+}
+
+
+ h6 {
+        font-size:155px;
+        font-family: 'Avenir_LT_W01_55';
+    }
+body {
+    background-color: #01152e;
+    font-family: 'Avenir_LT_W01_55';
+    margin: 0px;
+  
+}
+
+#dashboard[_dashboard-border] {
+    background-color: #01152e;
+}
+
+#dashboard[_dashboard-border] .container[_dashboard-border] {
+    padding-top: 30px;
+    
+}
+
+@media (min-width: 1756px) {
+    #dashboard[_dashboard-border] .container[_dashboard-border] {
+        width: 1756px;
+    }
+}
+
+/**xs screen*/
+@media(min-width:576px){
+    h3 {
+        font-size:12px;
+        font-family: 'Avenir_LT_W01_55';
+         }
+
+    panel-footer-custom  {
+        font-size:14px;
+        font-family: 'Avenir_LT_W01_55';
+        }
+        
+}
+/**s screen*/
+@media(min-width:768px){
+    h3 {
+        font-size:14px;
+        font-family: Avenir_LT_W01_65;
+      }
+
+    panel-footer-custom  {
+        font-size:19px;
+        font-family: Avenir_LT_W01_65;
+    }
+
+    
+    
+}
+/**md screen*/
+@media(min-width:992px){
+     h3 {
+        font-size:15px;
+        font-family: Avenir_LT_W01_65;
+    }
+       panel-footer-custom  {
+        font-size:19px;
+        font-family: Avenir_LT_W01_65;
+        
+    }
+      
+}
+      
+}
+/**l screen*/
+@media(min-width : 1824px){
+     h3 {
+        font-size:15px;
+        font-family: Avenir_LT_W01_65;
+    }
+}
+
+
+ 
+
+.panel-default > .panel-heading-custom {
+    background: #02234b;
+    color: #ffffff;
+    border: 0;
+    display: inline-block;
+    font-family: Avenir_LT_W01_65;
+    top: 25px;
+}
+.panel-default > .panel-body-custom {
+    background: #02234b;
+    color: green;
+   
+    font-family: Avenir_LT_W01_65;
+    font-size:130px;
+    height: 200px;
+    text-align: center;
+     
+}
+
+
+
+
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even){
+   background-color: white;
+}
+
+
+.panel-footer-custom {
+    position:absolute;
+    background: #02234b;
+    color: #ffffff;
+    border: 0;
+    display:inline-block;
+    left: 15px;
+    right:15px;
+    font-size:25px;
+    font-family: Avenir_LT_W01_65;
+    text-align:center;
+}
+
+.panel {
+    background: #02234b;
+    border: 0;
+    height: 300px;
+    min-width: 330px;
+
+}
+
+  
+.logo {
+   
+}
+
+.exportButton {
+    position: absolute;
+    top: 3%; 
+    left: 80%;
+}
+
+.loader {
+    position: fixed;
+	left: 10px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    font-size:14px;
+    font-weight:bold;
+    color: #ffffff;
+    background: #02234b;    
+}
+
+.mainDashboardLink {
+    position: absolute;
+	right: 10px;
+	top: 0px;
+	height: 18px;
+	z-index: 9998;
+    font-size:14px;
+    font-weight:bold;    
+}
+
+.fa-3x
+{
+    position: absolute;
+    top: 20px;
+    
+  }
+
+h3 {
+    position: relative;
+    top: 0px; 
+    left: 55px;
+    font-size:15px;
+    font-family: Avenir_LT_W01_65;
+}
+
+
+
+
+         
+       
+
+
+hr {
+    border: none;
+    height: 1px;
+    width : 80%;
+    /* Set the hr color */
+    color: #ffffff; /* old IE */
+    background-color: #ffffff; /* Modern Browsers */
+}
+
+

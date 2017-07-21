@@ -1,0 +1,22 @@
+/
+// HANDLE REALLY GOOD / REALLY BAD
+q)msgs:("I love this";"this is a problem";"no problem";"no solution";"I really like this";"I really hate this")
+q)splitMsgs:{`$'" " vs x}each msgs
+q){sum pw in x}each splitMsgs
+1 0 0 0 1 0i
+q){sum nw in x}each splitMsgs
+0 1 1 0 0 1i
+
+
+q)/ Initial test shows positive words were shown up 50%, negative 100%, but need to enhance for false negative / false positive
+q){sum pw in x}each splitMsgs
+1 0 0 0i
+q){sum nw in x}each splitMsgs
+0 1 1 0i
+\
+
+
+// WOULD FAIL - "hate - it's not a good thing, is it?"
+
+
+

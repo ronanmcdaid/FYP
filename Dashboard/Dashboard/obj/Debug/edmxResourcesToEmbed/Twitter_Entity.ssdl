@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TweetData">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="user_name" Type="varchar" MaxLength="20" />
+    <Property Name="retweet_count" Type="int" />
+    <Property Name="tweet_followers_count" Type="int" />
+    <Property Name="user_location" Type="varchar" MaxLength="256" />
+    <Property Name="tweet_ID" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="tweet_text" Type="varchar" MaxLength="140" />
+    <Property Name="searchterm" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Tweets">
+    <Key>
+      <PropertyRef Name="tweet_ID" />
+    </Key>
+    <Property Name="tweet_ID" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="user_name" Type="varchar" MaxLength="20" />
+    <Property Name="retweet_count" Type="int" />
+    <Property Name="tweet_followers_count" Type="int" />
+    <Property Name="user_location" Type="varchar" MaxLength="256" />
+    <Property Name="tweet_text" Type="varchar" MaxLength="140" />
+    <Property Name="name" Type="varchar" MaxLength="256" />
+    <Property Name="search_term" Type="varchar" MaxLength="256" />
+    <Property Name="original_post_user_name" Type="varchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="TweetStream">
+    <Key>
+      <PropertyRef Name="tweet_ID" />
+    </Key>
+    <Property Name="tweet_ID" Type="varchar" MaxLength="256" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="user_name" Type="varchar" MaxLength="20" />
+    <Property Name="retweet_count" Type="int" />
+    <Property Name="tweet_followers_count" Type="int" />
+    <Property Name="user_location" Type="varchar" MaxLength="256" />
+    <Property Name="tweet_text" Type="varchar" MaxLength="256" />
+    <Property Name="name" Type="varchar" MaxLength="256" />
+    <Property Name="search_term" Type="varchar" MaxLength="256" />
+    <Property Name="original_post_user_name" Type="varchar" MaxLength="256" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RonanMcDaid-FYP.dbo.most_retweets_numbered' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="most_retweets_numbered">
+    <Key>
+      <PropertyRef Name="RN" />
+    </Key>
+    <Property Name="RN" Type="bigint" Nullable="false" />
+    <Property Name="user_name" Type="varchar" MaxLength="20" />
+    <Property Name="retweet_count" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RonanMcDaid-FYP.dbo.top_tweets_numbered' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="top_tweets_numbered">
+    <Key>
+      <PropertyRef Name="RN" />
+    </Key>
+    <Property Name="RN" Type="bigint" Nullable="false" />
+    <Property Name="user_name" Type="varchar" MaxLength="20" />
+    <Property Name="tweet_followers_count" Type="int" />
+  </EntityType>
+  <Function Name="sp_most_retweets_numbered" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="TweetData" EntityType="Self.TweetData" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tweets" EntityType="Self.Tweets" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TweetStream" EntityType="Self.TweetStream" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="most_retweets_numbered" EntityType="Self.most_retweets_numbered" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[most_retweets_numbered].[RN] AS [RN], 
+[most_retweets_numbered].[user_name] AS [user_name], 
+[most_retweets_numbered].[retweet_count] AS [retweet_count]
+FROM [dbo].[most_retweets_numbered] AS [most_retweets_numbered]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="top_tweets_numbered" EntityType="Self.top_tweets_numbered" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[top_tweets_numbered].[RN] AS [RN], 
+[top_tweets_numbered].[user_name] AS [user_name], 
+[top_tweets_numbered].[tweet_followers_count] AS [tweet_followers_count]
+FROM [dbo].[top_tweets_numbered] AS [top_tweets_numbered]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,28 @@
+<html><body><title>Twitter Sentiment Analysis</title><style>background-color: lightblue</style>
+ <form action="">
+  <input type="button"        value="connect"   onclick="connect()" style="background-color: red"   >
+  <input type="text"   id="x" placeholder="Enter tweet text here"                         >
+  <input type="submit"        value="Determine Sentiment"      onclick="return send()">
+  <input type="button"        value="close"     onclick="ws.close()"   >
+ </form>
+<textarea style="color: blue; background-color: white; font-size: 16pt" id="out" rows=5 cols=80></textarea>
+<script>
+var ws,out=document.getElementById("out");
+function connect()
+{if ("WebSocket" in window)
+ {var l = window.location;ws = new WebSocket("ws://" + (l.hostname ? l.hostname : "localhost") + ":" + (l.port ? l.port : "5000") + "/"); 
+  out.value="connecting..." ;
+  ws.onopen=function(e){out.value="connected";} 
+  ws.onclose=function(e){out.value="disconnected";}
+  ws.onmessage=function(e){out.value=e.data;}
+  ws.onerror=function(e){out.value=e.data;}
+ }else alert("WebSockets not supported on your browser.");
+}
+function send()
+{x=document.getElementById("x");
+ v="\""+(x.value)+("\"");
+ ws.send(v);
+ out.value="sent "+v;
+ return false;
+}
+</script></body></html>

@@ -1,0 +1,84 @@
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\ApplicationInsights.config
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\csc.exe
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\System.Collections.Immutable.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\vbc.exe
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\VBCSCompiler.exe
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\roslyn\VBCSCompiler.exe.config
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Dashboard.dll.config
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Dashboard.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Dashboard.pdb
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.Web.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.WindowsServer.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.ApplicationInsights.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.Web.xml
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.AI.WindowsServer.xml
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.ApplicationInsights.xml
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.csprojResolveAssemblyReference.cache
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.dll
+c:\users\mckeownda\documents\visual studio 2015\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\ApplicationInsights.config
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\csc.exe
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\vbc.exe
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\VBCSCompiler.exe
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Dashboard.dll.config
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Dashboard.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Dashboard.pdb
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.Web.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.Web.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csprojResolveAssemblyReference.cache
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\EntityFramework.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\EntityFramework.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Autofac.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Newtonsoft.Json.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\System.Net.Http.Extensions.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\System.Net.Http.Primitives.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Tweetinvi.dll
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Autofac.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\Newtonsoft.Json.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\System.Net.Http.Extensions.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\bin\System.Net.Http.Primitives.xml
+C:\Users\Ronan\Downloads\Dashboard\Dashboard\Dashboard\obj\Debug\Dashboard.csproj.App.config

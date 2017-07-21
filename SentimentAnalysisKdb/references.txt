@@ -1,0 +1,9 @@
+ws.htm is based off the example provided by KxSystems
+https://github.com/KxSystems/cookbook/blob/master/ws.htm
+
+WordBanks
+/ Positive and negative word lists
+https://github.com/jeffreybreen/twitter-sentiment-analysis-tutorial-201107/tree/master/data/opinion-lexicon-English
+/ Intensifiers based on word list from
+https://en.wikipedia.org/wiki/Intensifier
+/ Words to switch context were self developed

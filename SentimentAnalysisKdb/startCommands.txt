@@ -1,0 +1,22 @@
+//
+/ To start the webclient / sentimenet analysis
+//
+
+	cd C:\q\SentimentAnalysisKdb
+	c:\q\w32\q.exe c:\q\SentimentAnalysisKdb\analysis.q -p 5000
+
+	/ Example on kdb command line
+	processTweets "This is really great news. I think everyone will be very happy"
+
+	to exit -     \\ 
+	
+	
+	
+	
+//
+/ Code to start batch analysis
+//
+	cd C:\q\SentimentAnalysisKdb
+	c:\q\w32\q.exe c:\q\SentimentAnalysisKdb\processTweets.q c:\q\SentimentAnalysisKdb\dublinTweets.txt
+	
+	Results saved in outputFile.txt - open from notepad

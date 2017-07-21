@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="TweetDatas">
+      <EntityTypeMapping TypeName="Model.TweetData">
+        <MappingFragment StoreEntitySet="TweetData">
+          <ScalarProperty Name="searchterm" ColumnName="searchterm" />
+          <ScalarProperty Name="tweet_text" ColumnName="tweet_text" />
+          <ScalarProperty Name="tweet_ID" ColumnName="tweet_ID" />
+          <ScalarProperty Name="user_location" ColumnName="user_location" />
+          <ScalarProperty Name="tweet_followers_count" ColumnName="tweet_followers_count" />
+          <ScalarProperty Name="retweet_count" ColumnName="retweet_count" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="top_tweets_numbered">
+      <EntityTypeMapping TypeName="Model.top_tweets_numbered">
+        <MappingFragment StoreEntitySet="top_tweets_numbered">
+          <ScalarProperty Name="tweet_followers_count" ColumnName="tweet_followers_count" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="RN" ColumnName="RN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tweets">
+      <EntityTypeMapping TypeName="Model.Tweet">
+        <MappingFragment StoreEntitySet="Tweets">
+          <ScalarProperty Name="original_post_user_name" ColumnName="original_post_user_name" />
+          <ScalarProperty Name="search_term" ColumnName="search_term" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="tweet_text" ColumnName="tweet_text" />
+          <ScalarProperty Name="user_location" ColumnName="user_location" />
+          <ScalarProperty Name="tweet_followers_count" ColumnName="tweet_followers_count" />
+          <ScalarProperty Name="retweet_count" ColumnName="retweet_count" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="tweet_ID" ColumnName="tweet_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="most_retweets_numbered">
+      <EntityTypeMapping TypeName="Model.most_retweets_numbered">
+        <MappingFragment StoreEntitySet="most_retweets_numbered">
+          <ScalarProperty Name="retweet_count" ColumnName="retweet_count" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="RN" ColumnName="RN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_most_retweets_numbered" FunctionName="Model.Store.sp_most_retweets_numbered">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Model.sp_most_retweets_numbered_Result">
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="retweet_count" ColumnName="retweet_count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TweetStreams">
+      <EntityTypeMapping TypeName="Model.TweetStream">
+        <MappingFragment StoreEntitySet="TweetStream">
+          <ScalarProperty Name="original_post_user_name" ColumnName="original_post_user_name" />
+          <ScalarProperty Name="search_term" ColumnName="search_term" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="tweet_text" ColumnName="tweet_text" />
+          <ScalarProperty Name="user_location" ColumnName="user_location" />
+          <ScalarProperty Name="tweet_followers_count" ColumnName="tweet_followers_count" />
+          <ScalarProperty Name="retweet_count" ColumnName="retweet_count" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="tweet_ID" ColumnName="tweet_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

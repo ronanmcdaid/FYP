@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TweetDatas" EntityType="Model.TweetData" />
+    <EntitySet Name="top_tweets_numbered" EntityType="Model.top_tweets_numbered" />
+    <EntitySet Name="Tweets" EntityType="Model.Tweet" />
+    <EntitySet Name="most_retweets_numbered" EntityType="Model.most_retweets_numbered" />
+    <FunctionImport Name="sp_most_retweets_numbered" ReturnType="Collection(Model.sp_most_retweets_numbered_Result)" />
+    <EntitySet Name="TweetStreams" EntityType="Model.TweetStream" />
+  </EntityContainer>
+  <EntityType Name="TweetData">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="retweet_count" Type="Int32" />
+    <Property Name="tweet_followers_count" Type="Int32" />
+    <Property Name="user_location" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="tweet_ID" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="tweet_text" Type="String" MaxLength="140" FixedLength="false" Unicode="false" />
+    <Property Name="searchterm" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="top_tweets_numbered">
+    <Key>
+      <PropertyRef Name="RN" />
+    </Key>
+    <Property Name="RN" Type="Int64" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="tweet_followers_count" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Tweet">
+    <Key>
+      <PropertyRef Name="tweet_ID" />
+    </Key>
+    <Property Name="tweet_ID" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="retweet_count" Type="Int32" />
+    <Property Name="tweet_followers_count" Type="Int32" />
+    <Property Name="user_location" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="tweet_text" Type="String" MaxLength="140" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="search_term" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="original_post_user_name" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="most_retweets_numbered">
+    <Key>
+      <PropertyRef Name="RN" />
+    </Key>
+    <Property Name="RN" Type="Int64" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="retweet_count" Type="Int32" />
+  </EntityType>
+  <ComplexType Name="sp_most_retweets_numbered_Result">
+    <Property Type="String" Name="user_name" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="retweet_count" Nullable="true" />
+  </ComplexType>
+  <EntityType Name="TweetStream">
+    <Key>
+      <PropertyRef Name="tweet_ID" />
+    </Key>
+    <Property Name="tweet_ID" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="retweet_count" Type="Int32" />
+    <Property Name="tweet_followers_count" Type="Int32" />
+    <Property Name="user_location" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="tweet_text" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="search_term" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="original_post_user_name" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

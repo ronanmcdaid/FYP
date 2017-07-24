@@ -24,3 +24,11 @@ shouldn't
 shouldnt
 won't
 wont
+ain
+aren
+couldn
+didn
+don
+haven
+isn
+shouldn
